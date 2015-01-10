@@ -1,0 +1,45 @@
+<%= form_for(@static) do |f| %>
+    <% if @static.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@static.errors.count, "error") %> prohibited this static from being saved:</h2>
+
+          <ul>
+            <% @static.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :title_ru %>
+      <%= f.text_field :title_ru %>
+    </div>
+    <div class="field">
+      <%= f.label :title_en %>
+      <%= f.text_field :title_en %>
+    </div>
+    <div class="field">
+      <%= f.label :short_ru %>
+      <%= f.text_area :short_ru, :class => "short" %>
+    </div>
+    <div class="field">
+      <%= f.label :short_en %>
+      <%= f.text_area :short_en, :class => "short" %>
+    </div>
+    <div class="field">
+      <%= f.label :body_ru %>
+      <%= f.text_area :body_ru, :class => "full" %>
+    </div>
+    <div class="field">
+      <%= f.label :body_en %>
+      <%= f.text_area :body_en, :class => "full" %>
+    </div>
+    <div class="field">
+      <%= f.label :short_url %>
+      <%= f.text_field :short_url %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>

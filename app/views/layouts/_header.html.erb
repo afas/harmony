@@ -1,0 +1,13 @@
+<div class="header">
+
+  <div id="menu">
+    <ul>
+      <li class='<%= :active if @page == :publications %>'><%= link_to t('main_menu.posts'), root_path %></li>
+      <li class='<%= :active if @page == :idea %>'><%= link_to t('main_menu.idea'), idea_path %></li>
+      <li class='<%= :active if @page == :person %>'><%= link_to t('main_menu.person'), person_path %></li>
+    </ul>
+  </div>
+
+  <%= render "layouts/lang_switch" %>
+
+</div>

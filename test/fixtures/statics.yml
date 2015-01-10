@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title_en: MyString
+  title_ru: MyString
+  short_en: MyText
+  short_ru: MyText
+  body_en: MyText
+  body_ru: MyText
+
+two:
+  title_en: MyString
+  title_ru: MyString
+  short_en: MyText
+  short_ru: MyText
+  body_en: MyText
+  body_ru: MyText

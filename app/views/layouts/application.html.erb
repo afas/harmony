@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title><%= t('site_title') %></title>
+  <%= stylesheet_link_tag "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <meta name="keywords" content="Иосиф Шевелев, Шевелев, Иосиф Шефтелевич Шевелев, Joseph Shevelev, Архитектура, Золотое сечение, Гармония, Harmony, Golden section, Гармония в зеркале геометрии, Harmony in a mirror of geometry">
+  <meta name="description" content="Пропорции, форма, образ, структура. Шедевры зодчества: Парфенон. Целостность и комбинаторика. Парные меры и архитектура Древней Руси. Proportions, the form, image, structure. Architecture masterpieces: Parthenon. Integrity & combinatorial analysis. Conjugate measures and architecture of Ancient Russia.">
+</head>
+<body>
+
+<div class="header-container">
+  <%= render "layouts/header" %>
+  <%= render "layouts/banner" if @page == :welcome %>
+</div>
+
+<div class="content-container <%= 'with-banner' if @page == :welcome %>">
+  <%= yield %>
+</div>
+
+</body>
+</html>

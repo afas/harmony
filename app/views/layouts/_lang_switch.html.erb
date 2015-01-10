@@ -1,0 +1,5 @@
+<div id="lang">
+  <% Language.collection.each do |lang| %>
+      <%= link_to lang.name.upcase, lang_switch_path(lang.cut) unless I18n.locale.to_s == lang.cut %>
+  <% end %>
+</div>

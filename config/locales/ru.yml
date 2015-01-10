@@ -1,0 +1,30 @@
+ru:
+  site_title: "Студия основ гармонии Иосифа Шевелева"
+
+  main_menu:
+    posts: "Публикации"
+    idea: "Идея"
+    person: "Персона"
+
+  welcome:
+    no_posts: "Нет публикаций на этом языке."
+
+  activerecord:
+    capitalized_models:
+      post: "Публикация"
+      static: "Статическая страница"
+    models:
+      post: "публикация"
+      static: "статическая страница"
+
+    attributes:
+      post:
+        lang: "Язык"
+        title: "Заголовок"
+        short: "Суть"
+        body: "Содержание"
+      static:
+        short_url: "Короткий адрес (en)"
+        title: "Заголовок"
+        short: "Суть"
+        body: "Содержание"

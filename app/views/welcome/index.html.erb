@@ -1,0 +1,33 @@
+<% unless @posts.empty? %>
+    <% @posts.each do |post| %>
+        <% if cycle('odd', 'even') == 'odd' %>
+            <div class="content-full-width-container">
+              <div class="content">
+                <img src="/assets/picts/harmony-mirror.jpg" class="image-circle anounce-list" alt="Персона">
+
+                <div class="text-right">
+                  <%= content_tag :h2, link_to(post.title, post) %>
+                  <%= content_tag :p, post.short %>
+                </div>
+              </div>
+            </div>
+        <% else %>
+            <div class="content">
+              <img src="/assets/picts/alphaomega.jpg" class="image-circle anounce-list" alt="Персона">
+
+              <div class="text-right">
+                <%= content_tag :h2, link_to(post.title, post) %>
+                <%= content_tag :p, post.short %>
+              </div>
+            </div>
+        <% end %>
+    <% end %>
+<% else %>
+    <div class="content">
+        <%= content_tag :h2, t("welcome.no_posts") %>
+    </div>
+<% end %>
+
+
+
+

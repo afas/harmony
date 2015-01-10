@@ -1,0 +1,33 @@
+<div class="content">
+  <%= content_tag :h1, @post.title %>
+
+
+  <div id="slides">
+    <ul>
+    <%= content_tag :li, image_tag("picts/1.jpg") %>
+    <%= content_tag :li, image_tag("picts/3.jpg") %>
+    <%= content_tag :li, image_tag("picts/4.jpg") %>
+    <%= content_tag :li, image_tag("picts/9.jpg") %>
+    <%= content_tag :li, image_tag("picts/10.jpg") %>
+    <%= content_tag :li, image_tag("picts/15.jpg") %>
+    <%= content_tag :li, image_tag("picts/28.jpg") %>
+    <%= content_tag :li, image_tag("picts/29.jpg") %>
+    <%= content_tag :li, image_tag("picts/33.jpg") %>
+    <%= content_tag :li, image_tag("picts/36.jpg") %>
+    <%= content_tag :li, image_tag("picts/42-a.jpg") %>
+    <%= content_tag :li, image_tag("picts/42-b.jpg") %>
+    </ul>
+
+    <script type="text/javascript">
+        $('#slides').sudoSlider({});
+    </script>
+  </div>
+
+  <p class="short">
+    <%= @post.short %>
+  </p>
+
+  <div class="post">
+    <%= raw @post.body %>
+  </div>
+</div>

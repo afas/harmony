@@ -1,0 +1,30 @@
+en:
+  site_title: "Basics harmony studio of Joseph Shevelev"
+
+  main_menu:
+    posts: "Publications"
+    idea: "Concept"
+    person: "Person"
+
+  welcome:
+    no_posts: "No publications in this language."
+
+  activerecord:
+    capitalized_models:
+      post: "Post"
+      static: "Static"
+    models:
+      post: "post"
+      static: "static"
+
+    attributes:
+      post:
+        lang: "Language"
+        title: "Title"
+        short: "Short"
+        body: "Body"
+      static:
+        short_url: "Short url (en)"
+        title: "Title"
+        short: "Short"
+        body: "Body"
