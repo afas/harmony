@@ -1,8 +1,1 @@
-<div id="banner">
-
-  <div class="banner-info">
-    <%= content_tag :span, @banner.short %>
-    <%= content_tag :h2, link_to(@banner.title, "/files/edinicy_estestvennoy_geometrii.pdf", title: "Скачать книгу Единицы естественной геометрии", target: "_blank") %>
-  </div>
-
-</div>
+<%= raw @banner.body %>
