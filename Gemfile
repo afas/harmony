@@ -15,3 +15,5 @@ gem 'russian'
 
 gem 'turbolinks'
 gem 'nprogress-rails'
+
+gem 'unicorn-worker-killer'
